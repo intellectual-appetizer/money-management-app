@@ -41,6 +41,67 @@ export interface Database {
           updated_at?: string
         }
       }
+      gym_entries: {
+        Row: {
+          id: string
+          user_id: string
+          exercise: string
+          reps: number
+          sets: number
+          datetime: string
+          comment: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id?: string
+          exercise: string
+          reps: number
+          sets: number
+          datetime: string
+          comment?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          exercise?: string
+          reps?: number
+          sets?: number
+          datetime?: string
+          comment?: string | null
+          created_at?: string
+        }
+      }
+      food_entries: {
+        Row: {
+          id: string
+          user_id: string
+          food: string
+          quantity: string | null
+          datetime: string
+          comment: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id?: string
+          food: string
+          quantity?: string | null
+          datetime: string
+          comment?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          food?: string
+          quantity?: string | null
+          datetime?: string
+          comment?: string | null
+          created_at?: string
+        }
+      }
       categories: {
         Row: {
           id: string

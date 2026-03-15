@@ -1,0 +1,25 @@
+# Node / Next build
+node_modules/
+.next/
+dist/
+
+# Local env / secrets
+.env
+.env.local
+.env.*.local
+.vercel/
+
+# Logs / OS
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+*.log
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Optional build outputs
+coverage/
