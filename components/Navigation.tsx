@@ -43,8 +43,9 @@ export default function Navigation() {
   if (!user) return null
 
   const navItems = [
-    { href: '/', label: 'Dashboard', icon: '📊' },
-    { href: '/transactions', label: 'Transactions', icon: '💰' },
+    { href: '/transactions', label: 'Finance', icon: '💰' },
+    { href: '/gym', label: 'Gym', icon: '🏋️' },
+    { href: '/food', label: 'Food', icon: '🍽️' },
     { href: '/analytics', label: 'Analytics', icon: '📈' },
     { href: '/insights', label: 'Insights', icon: '🤖' },
   ]
